@@ -1,2 +1,2 @@
-/* Copyright (c) 2022 Read Write Tools. Legal use subject to the Thematic Earth Software License Agreement. */
+/* Copyright (c) 2023 Read Write Tools. Legal use subject to the Thematic Earth Software License Agreement. */
 import expect from'../dev/expect.js';export default class LegendFeaturePoint{constructor(e,t){this.symbolX=e,this.symbolY=t,this.sliceX=0,this.sliceY=0,this.canvasX=0,this.canvasY=0,this.isOnNearSide=!0,Object.seal(this)}determineSliceXY(e,t,s,i,c,h){expect(e,'Number'),expect(t,'Number'),expect(s,'Number'),expect(i,'Number'),expect(c,'Number'),expect(h,'Number'),this.sliceX=Math.round(e-s+this.symbolX*c),this.sliceY=Math.round(t-i+this.symbolY*h)}determineLegendXY(e){expect(e,'Number'),this.canvasX=this.sliceX,this.canvasY=e+this.sliceY}}

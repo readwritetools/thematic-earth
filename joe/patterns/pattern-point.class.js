@@ -1,2 +1,2 @@
-/* Copyright (c) 2022 Read Write Tools. Legal use subject to the Thematic Earth Software License Agreement. */
+/* Copyright (c) 2023 Read Write Tools. Legal use subject to the Thematic Earth Software License Agreement. */
 import expect from'../dev/expect.js';export default class PatternPoint{constructor(t,e){this.canvasX=t,this.canvasY=e,this.isOnNearSide=!0,Object.seal(this)}}

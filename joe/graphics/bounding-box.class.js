@@ -1,2 +1,2 @@
-/* Copyright (c) 2022 Read Write Tools. Legal use subject to the Thematic Earth Software License Agreement. */
+/* Copyright (c) 2023 Read Write Tools. Legal use subject to the Thematic Earth Software License Agreement. */
 export default class BoundingBox{constructor(t,i,h,s){null==t?this.emptyConstructor():(this.left=t,this.right=i,this.top=h,this.bottom=s),this.width=this.right-this.left,this.height=Math.abs(this.bottom-this.top),this.centerX=(this.left+this.right)/2,this.centerY=(this.top+this.bottom)/2}emptyConstructor(){this.left=0,this.right=0,this.top=0,this.bottom=0}isValid(){return this.right!=this.left&&this.top!=this.bottom}}

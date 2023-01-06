@@ -1,2 +1,2 @@
-/* Copyright (c) 2022 Read Write Tools. Legal use subject to the Thematic Earth Software License Agreement. */
+/* Copyright (c) 2023 Read Write Tools. Legal use subject to the Thematic Earth Software License Agreement. */
 import EnumProxyHandler from'./enum-proxy-handler.class.js';var PackageState={PARSING_OUTSIDE:0,PARSING_INSIDE:1,PROCESSING:2};Object.freeze(PackageState);export default new Proxy(PackageState,new EnumProxyHandler('PackageState'));

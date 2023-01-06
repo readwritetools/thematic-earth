@@ -1,2 +1,2 @@
-/* Copyright (c) 2022 Read Write Tools. Legal use subject to the Thematic Earth Software License Agreement. */
+/* Copyright (c) 2023 Read Write Tools. Legal use subject to the Thematic Earth Software License Agreement. */
 import EnumProxyHandler from'./enum-proxy-handler.class.js';var SymbolSpecifierType={SELECT:'select',MULTI:'multi',COLOR:'color',NUMBER:'number',RANGE:'range',MAPSCALE:'mapscale',TEXT:'text'};Object.freeze(SymbolSpecifierType);export default new Proxy(SymbolSpecifierType,new EnumProxyHandler('SymbolSpecifierType'));

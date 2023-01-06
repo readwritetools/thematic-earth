@@ -1,2 +1,2 @@
-/* Copyright (c) 2022 Read Write Tools. Legal use subject to the Thematic Earth Software License Agreement. */
+/* Copyright (c) 2023 Read Write Tools. Legal use subject to the Thematic Earth Software License Agreement. */
 export default class LegendConsts{static symbolPadding=4;static symbolTopMargin=3;static symbolBottomMargin=3;static symbolLeftMargin=6;static symbolRightMargin=12;static symbolBoxHeight=40;static symbolBoxWidth=60;static getSliceHeight(){return LegendConsts.symbolTopMargin+LegendConsts.symbolBoxHeight+LegendConsts.symbolBottomMargin}static getVerticalBaseline(){return LegendConsts.symbolTopMargin+LegendConsts.symbolBoxHeight/2}static getTextLeft(){return LegendConsts.symbolLeftMargin+LegendConsts.symbolBoxWidth+LegendConsts.symbolRightMargin}}

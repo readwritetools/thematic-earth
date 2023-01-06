@@ -1,2 +1,2 @@
-/* Copyright (c) 2022 Read Write Tools. Legal use subject to the Thematic Earth Software License Agreement. */
+/* Copyright (c) 2023 Read Write Tools. Legal use subject to the Thematic Earth Software License Agreement. */
 import BasePackage from'../packages/base-package.class.js';export default class JsonPackage extends BasePackage{constructor(e,s){super(e,s),this.lines=[]}parseLine(e){this.lines.push(e)}summarizePackage(){return{lineCount:this.lines.length}}}
