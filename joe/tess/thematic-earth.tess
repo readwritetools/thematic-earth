@@ -1,0 +1,228 @@
+/*=============================================================================
+
+  File:         /tess/thematic-earth.tess
+  Language:     TESS (Thematic Earth Symbolic Specifiers)
+  Copyright:    Read Write Tools © 2020
+  License:      Thematic Earth Software License Agreement
+  Initial date: May 14, 2013
+  Contents:     Symbolic Specifiers for the Thematic Earth web component
+
+=============================================================================*/
+@charset "UTF-8";
+
+/*------ applied to all features -----*/
+
+feature {
+	map-basis:    			5000;		/* scale-coefficient = map-basis / current map-scale */
+	map-strokes-begin:      2500;		/* when map-scale is less than this, hide strokes */
+	map-strokes-low:     	2500;		/* when map-scale is less than this, stop scaling strokes */
+	map-strokes-high:       15000;		/* when map-scale is more than this, start scaling strokes */
+	map-strokes-end:        100000;		/* when map-scale is more than this, hide strokes */
+	map-symbols-begin:      2500;
+	map-symbols-low:     	2500;
+	map-symbols-high:       15000;
+	map-symbols-end:        15000;
+	map-labels-begin:       2500;
+	map-labels-low:      	2500;
+	map-labels-high:        15000;
+	map-labels-end:         15000;	
+	visibility:				visible;
+}
+
+/*------ By type of feature: point, line, polygon, label, space, sphere -----*/
+
+point {
+	visibility:				visible;
+	symbol-type:			circle;
+	symbol-stroke-width:	none;
+	symbol-stroke-color:	#777;
+	symbol-fill-color:		#777;
+	/* No default for these: symbol-size, symbol-inner-size, symbol-node-count, symbol-code-point */
+}
+
+line {
+	visibility: visible;
+	stroke-width: 1;
+	stroke-color: #777;
+	stroke-type: solid;
+}
+
+polygon {
+	visibility: visible;
+	stroke-width: 1;
+	stroke-color: #555;
+	stroke-type: solid;
+	fill-color: #999;
+	fill-composition: source-over;
+}
+
+label {
+	visibility: visible;
+	label-fill-color: #fff;	
+	label-stroke-color: none;
+	label-font-family: sans-serif;
+	label-font-size: 12;
+}
+
+space {
+	visibility: visible;
+	deep-space: visible;
+	deep-space-color: #093640;
+	deep-space-star-count: 500;
+	deep-space-star-color: #e0e070;
+	earth-glow: hidden;
+	earth-glow-size: 200;
+	earth-glow-offset: 40;
+	earth-glow-axis: 270;
+	earth-glow-inner-color: #107187;
+	earth-glow-outer-color: #093640;
+	sunrise: hidden; 
+	sunrise-inner-radius: 5; 
+	sunrise-outer-radius: 120; 
+	sunrise-inner-color: #107187; 
+	sunrise-outer-color: #093640;
+}
+
+sphere { 
+	fill-color: #cccccc20;
+}
+
+/*----- "selected" variants: point, line, polygon -----*/
+point["selected"] {
+	symbol-stroke-color: #FFBE6A;
+	symbol-fill-color: #FFFF00;
+}
+
+line["selected"] {
+	stroke-color: #FFBE6A;
+}
+
+polygon["selected"] {
+	stroke-color: #FFBE6A;
+	fill-color: #FFFF00;
+}
+
+/*------------------------------- legend -------------------------------------*/
+.legend-background {
+	fill-color: #fff;
+	stroke-width: none;
+}
+.legend-label {
+	label-fill-color: #fff;	
+	label-font-size: 12;
+}
+
+/*------------------------------- night -------------------------------------*/
+.night {
+	fill-color: #33333377;
+}
+		
+/*--------------------------- place of interest -----------------------------*/
+.place-of-interest {
+	symbol-size: 5;
+	symbol-fill-color: #db9404;
+	symbol-stroke-width: 6;
+	symbol-stroke-color: #b87c02aa;
+}
+
+/*------------- named-meridians, named-parallels, crosshairs ----------------*/
+.named-meridians,
+.named-parallels,
+.graticule { 
+	stroke-color: #107187; 
+	stroke-width: 1.0;
+	stroke-type: dash;
+}
+
+.named-meridians["Prime Meridian"],
+.named-meridians["Intl. Dateline"] {
+	stroke-color: #107187;
+	stroke-type: solid;
+}
+
+.named-parallels["Equator"] { 
+	stroke-width: 2.0;
+	stroke-type: solid;
+}
+.named-parallels["Arctic Circle"],
+.named-parallels["Tropic of Cancer"],
+.named-parallels["Tropic of Capricorn"],
+.named-parallels["Antarctic Circle"] { 
+	stroke-width: 1.0;
+	stroke-type: solid;
+}
+
+.crosshairs {
+	symbol-type: crosshair;
+	symbol-stroke-color: #777;
+	symbol-stroke-width: 1;
+	symbol-size: 1;
+}
+
+/*---------------------------- great-circles ---------------------------------*/
+.great-circles {
+	label-feature-key: label;
+	label-fill-color: #333;
+}
+.great-circles[type="embarkation"] {
+	symbol-type: star;
+	symbol-size: 4;
+	symbol-fill-color: #f00;
+	symbol-stroke-width: 1;
+	symbol-stroke-color: #777;
+	label-font-size: 14;
+}
+.great-circles[type="destination"] {
+	symbol-type: shuriken;
+	symbol-size: 4;
+	symbol-fill-color: #f00;
+	symbol-stroke-width: 1;
+	symbol-stroke-color: #777;
+	label-font-size: 14;
+}
+.great-circles[type="embarkation antipode"] {
+	symbol-type: star;
+	symbol-size: 4;
+	symbol-fill-color: #777;
+	symbol-stroke-width: 1;
+	symbol-stroke-color: #eee;
+	label-fill-color: #555;
+	label-font-size: 12;
+}
+.great-circles[type="destination antipode"] {
+	symbol-type: shuriken;
+	symbol-size: 4;
+	symbol-fill-color: #777;
+	symbol-stroke-width: 1;
+	symbol-stroke-color: #eee;
+	label-fill-color: #555;
+	label-font-size: 12;
+}
+.great-circles[type="short waypoint"] {
+	symbol-type: circle;
+	symbol-size: 2;
+	symbol-fill-color: #f00;
+	symbol-stroke-width: 1;
+	symbol-stroke-color: #777;
+	label-font-size: 9;
+}
+.great-circles[type="long waypoint"] {
+	symbol-type: circle;
+	symbol-size: 2;
+	symbol-fill-color: #777;
+	symbol-stroke-width: 1;
+	symbol-stroke-color: #eee;
+	label-fill-color: #555;
+	label-font-size: 9;
+}
+.great-circles[type="short route"] {
+	stroke-width: 3;
+	stroke-type: solid;
+	stroke-color: #fcc;
+}
+.great-circles[type="long route"] {
+	stroke-width: 2;
+	stroke-type: short-dash;
+	stroke-color: #999;
+}
+

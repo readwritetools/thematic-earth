@@ -1,0 +1,44 @@
+{
+  "name": "thematic-earth",
+  "version": "0.80.0",
+  "description": "HTML-based, whole-Earth thematic maps using locally hosted data layers",
+  "author": "Read Write Tools",
+  "license": "see license.blue",
+  "type": "module",
+  "keywords": [
+    "Web GIS",
+    "maps",
+    "cartography",
+    "web-component",
+    "readwritetools"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/readwritetools/thematic-earth.git"
+  },
+  "bugs": {
+    "url": "https://github.com/readwritetools/thematic-earth/issues"
+  },
+  "homepage": "https://hub.readwritetools.com/components/thematic-earth.blue",
+  "files": [
+    "gcslib",
+    "img",
+    "joe",
+    "rwt-dockable-panels",
+    "element.js",
+    "license.blue",
+    "license.html",
+    "readme.md",
+    "rwt-registration-keys.js"
+  ],
+  "readwritetools": {
+    "modules": {
+      "esmodules": true,
+      "commonjs": false
+    },
+    "suitability": {
+      "browser": "api",
+      "nodejs": "none"
+    }
+  }
+}

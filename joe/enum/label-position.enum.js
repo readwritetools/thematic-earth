@@ -1,0 +1,2 @@
+/* Copyright (c) 2022 Read Write Tools. Legal use subject to the Thematic Earth Software License Agreement. */
+import EnumProxyHandler from'./enum-proxy-handler.class.js';var LabelPosition={NW:'NW',N:'N',NE:'NE',W:'W',C:'C',E:'E',SW:'SW',S:'S',SE:'SE'};Object.freeze(LabelPosition);export default new Proxy(LabelPosition,new EnumProxyHandler('LabelPosition'));

@@ -1,0 +1,43 @@
+{
+  "name": "softlib",
+  "version": "1.0.18",
+  "description": "Dynamic code for type expectations, soft assertions, and logging to the terminal with stack trace.",
+  "author": "Read Write Tools",
+  "license": "MIT",
+  "type": "module",
+  "exports": {
+    ".": "./sdk.js",
+    "./*": "./*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/readwritetools/softlib.git"
+  },
+  "keywords": [
+    "expect",
+    "aver",
+    "terminal",
+    "stack trace",
+    "vartype"
+  ],
+  "bugs": {
+    "url": "https://github.com/readwritetools/softlib/issues"
+  },
+  "homepage": "https://hub.readwritetools.com/libs/softlib.blue",
+  "files": [
+    "img",
+    "license.txt",
+    "readme.md",
+    "*.js"
+  ],
+  "com_readwritetools": {
+    "modules": {
+      "esmodules": true,
+      "commonjs": false
+    },
+    "suitability": {
+      "browser": "api",
+      "nodejs": "api"
+    }
+  }
+}

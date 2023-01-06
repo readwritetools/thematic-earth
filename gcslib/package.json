@@ -1,0 +1,56 @@
+{
+  "name": "gcslib",
+  "version": "1.0.2",
+  "description": "JavaScript library for parsing and serializing Geographic Coordinate System encoded strings and buffers.",
+  "author": "Joe Honton",
+  "license": "see license.html",
+  "type": "module",
+  "exports": {
+    ".": "./api/sdk.js",
+    "./*": "./*"
+  },
+  "keywords": [
+    "GIS",
+    "longitude",
+    "latitude",
+    "geojson",
+    "ice",
+    "icebin",
+    "gfe",
+    "gfebin",
+    "spherical coordinates",
+    "orthographic earth"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/readwritetools/gcslib.git"
+  },
+  "bugs": {
+    "url": "https://github.com/readwritetools/gcslib/issues"
+  },
+  "homepage": "https://hub.readwritetools.com/libs/gcslib.blue",
+  "files": [
+    "api",
+    "gcs",
+    "ice",
+    "img",
+    "parsers",
+    "serializers",
+    "softlib",
+    "tae",
+    "util",
+    "license.blue",
+    "license.html",
+    "readme.md"
+  ],
+  "com_readwritetools": {
+    "modules": {
+      "esmodules": true,
+      "commonjs": false
+    },
+    "suitability": {
+      "browser": "api",
+      "nodejs": "api"
+    }
+  }
+}

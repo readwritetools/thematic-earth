@@ -1,0 +1,2 @@
+/* Copyright (c) 2022 Read Write Tools. Legal use subject to the Thematic Earth Software License Agreement. */
+import EnumProxyHandler from'./enum-proxy-handler.class.js';var LabelingPhase={INIT_COLLISION_MATRIX:0,GET_FEATURE_DATA:1,COMPUTE_TEXT_METRICS:2,DISQUALIFICATION_CRITERIA:3,POSSIBLE_PLACEMENTS:4,RESERVE_SYMBOLS:5,COLLISION_ADJUSTMENT:6,DRAW_RESERVED_PIXELS:7,BOUNDING_BOX:8,DRAW_LABELS:9,NUM_PHASES:10};Object.freeze(LabelingPhase);export default new Proxy(LabelingPhase,new EnumProxyHandler('LabelingPhase'));

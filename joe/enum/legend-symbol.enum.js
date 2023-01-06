@@ -1,0 +1,2 @@
+/* Copyright (c) 2022 Read Write Tools. Legal use subject to the Thematic Earth Software License Agreement. */
+import EnumProxyHandler from'./enum-proxy-handler.class.js';var LegendSymbol={PLACE:'place',HORIZONTAL_LINE:'horizontal-line',VERTICAL_LINE:'vertical-line',ARC:'arc',RIVER:'river',ROUTE:'route',RECTANGLE:'rectangle',SPACE:'space',CIRCLE:'circle',LAKE:'lake',TERRITORY:'territory'};Object.freeze(LegendSymbol);export default new Proxy(LegendSymbol,new EnumProxyHandler('LegendSymbol'));

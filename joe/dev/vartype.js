@@ -1,0 +1,2 @@
+/* Copyright (c) 2022 Read Write Tools. Legal use subject to the Thematic Earth Software License Agreement. */
+import softlibVartype from'../../gcslib/softlib/vartype.js';export default function vartype(t){return softlibVartype(t)}

@@ -1,0 +1,42 @@
+{
+  "name": "rwt-dockable-panels",
+  "version": "1.0.32",
+  "description": "Expand, collapse, dock and float accordion-style, standards-based DOM component",
+  "author": "Read Write Tools",
+  "license": "see license.html",
+  "module": "rwt-dockable-panels.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/readwritetools/rwt-dockable-panels.git"
+  },
+  "keywords": [
+    "web-component",
+    "custom-element",
+    "html-template",
+    "shadow-dom",
+    "readwritetools"
+  ],
+  "bugs": {
+    "url": "https://github.com/readwritetools/rwt-dockable-panels/issues"
+  },
+  "homepage": "https://hub.readwritetools.com/components/dockable-panels.blue",
+  "files": [
+    "img",
+    "license.html",
+    "readme.md",
+    "rwt-dockable-panels.css",
+    "rwt-dockable-panels.html",
+    "rwt-dockable-panels.js",
+    "rwt-registration-keys.js"
+  ],
+  "readwritetools": {
+    "modules": {
+      "esmodules": true,
+      "commonjs": false
+    },
+    "suitability": {
+      "browser": "api",
+      "nodejs": "none"
+    }
+  }
+}

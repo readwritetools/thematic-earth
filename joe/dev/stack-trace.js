@@ -1,0 +1,2 @@
+/* Copyright (c) 2022 Read Write Tools. Legal use subject to the Thematic Earth Software License Agreement. */
+import softlibStackTrace from'../../gcslib/softlib/stack-trace.js';export default class StackTrace extends softlibStackTrace{}

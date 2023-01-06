@@ -1,0 +1,2 @@
+/* Copyright (c) 2022 Read Write Tools. Legal use subject to the Thematic Earth Software License Agreement. */
+import EnumProxyHandler from'./enum-proxy-handler.class.js';var FeatureType={POINT:'point',LINE:'line',POLYGON:'polygon',SPACE:'space',SPHERE:'sphere',LABEL:'label'};Object.freeze(FeatureType);export default new Proxy(FeatureType,new EnumProxyHandler('FeatureType'));
