@@ -1,6 +1,6 @@
 {
   "name": "thematic-earth",
-  "version": "0.80.1",
+  "version": "0.80.2",
   "description": "HTML-based, whole-Earth thematic maps using locally hosted data layers",
   "author": "Read Write Tools",
   "license": "see license.blue",
