@@ -56,6 +56,7 @@ polygon {
 	fill-composition: source-over;
 }
 
+/* careful: label features not yet implemented */
 label {
 	visibility: visible;
 	label-fill-color: #fff;	
@@ -67,7 +68,7 @@ label {
 space {
 	visibility: visible;
 	deep-space: visible;
-	deep-space-color: #093640;
+	deep-space-color: #171717;
 	deep-space-star-count: 500;
 	deep-space-star-color: #e0e070;
 	earth-glow: hidden;
