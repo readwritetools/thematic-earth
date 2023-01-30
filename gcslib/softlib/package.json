@@ -1,6 +1,6 @@
 {
   "name": "softlib",
-  "version": "1.0.18",
+  "version": "1.0.19",
   "description": "Dynamic code for type expectations, soft assertions, and logging to the terminal with stack trace.",
   "author": "Read Write Tools",
   "license": "MIT",
