@@ -1,4 +1,4 @@
-
+html
 
 
 
@@ -141,7 +141,7 @@ DOM Component.
 
 <details>
 	<summary>Thematic Earth Software License Agreement</summary>
-	<p>Copyright © 2022 Read Write Tools.</p>
+	<p>Copyright © 2023 Read Write Tools.</p>
 	<ol>
 		<li>This Software License Agreement ("Agreement") is a legal contract between you and Read Write Tools ("RWT"). The "Materials" subject to this Agreement include the "Thematic Earth" software and associated documentation.</li>
 		<li>By using these Materials, you agree to abide by the terms and conditions of this Agreement.</li>

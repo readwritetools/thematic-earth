@@ -1,6 +1,6 @@
 {
   "name": "gcslib",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "JavaScript library for parsing and serializing Geographic Coordinate System encoded strings and buffers.",
   "author": "Joe Honton",
   "license": "see license.html",
